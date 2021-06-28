@@ -33,7 +33,7 @@ After we define the number of CPU we want for the multiprocessing. And we create
 
 
  How to use the code ?
-Go on mesher function and change the paths. Cnage also the path on the main for the multiprocessing
+Go on mesher function and change the paths. Change also the path on the main for the multiprocessing
 ```python
 
 '''
