@@ -32,9 +32,31 @@ For the multiprocessing we put in a list all the stl file. Using os.scandir and 
 After we define the number of CPU we want for the multiprocessing. And we create the pool.
 
 
-Reach out to me if you find some troubles.
+ How to use the code ?
+Go on mesher function and change the paths. Cnage also the path on the main for the multiprocessing
+```python
 
+'''
+Mesh function
+'''
+def mesher(the_stl):
+    # --PATH-- #
 
+    # Put your own path:
+    folder_stl = "C:/Users/folder_stl/"
+    folder_msh = "C:/Users/folder_mesh/"
+    folder_report = "C:/Users/report.txt"
+
+'''
+MAIN
+'''
+if __name__ == '__main__':
+
+    # --PATH-- #
+
+    path_stl = 'C:/Users/folder_stl'
+
+```
 
 
 # Analyzer
