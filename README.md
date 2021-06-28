@@ -64,10 +64,18 @@ This python script was made to analyze MSH files.
 
 The code uses meshio.
 The input is a MSH file and the output are the number of nodes, edges and kind of mesh of the file.
+How to use it? Go on add your path section and change the path and the file name.
+```python
+'''
+Add your path
+'''
 
+path = "C:/Users/folder_mesh/"
+file = "myfile.msh"
 
+```
 
-# References:
+# References
  C. Geuzaine and J.-F. Remacle. Gmsh: a three-dimensional finite element mesh generator with built-in pre- and post-processing facilities. International Journal for Numerical Methods in Engineering 79(11), pp. 1309-1331, 2009.
  
  https://github.com/nschloe/meshio
