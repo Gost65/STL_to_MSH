@@ -6,10 +6,46 @@ The input is a folder of STL file and the output is a folder of MSH file.
 You can ajust the parameters. The script uses multiprocessing.
 You can custom the multiprocessing with your number of CPUs.
 
+The code is structured as follow:
+
+ 1) Class
+The first part of the code is a class to define the parameters of gmsh.
+If you want to add more parameters, please add them inside the class and define them later on the mesh function.
+
+
+ 2) Report function
+We create a report in txt format in which the stl files with problems are reported. 
+
+
+ 3) Mesher function
+The input is a stl file. Inside the function you can change the path of the stl folder, the path for the result and the path for the report.
+Then you find a ‘try’ to mesh. You have to call and define the mesh parameters. After you have all the step to mesh the file. After the ‘try’ you find the exception that return the report.
+
+
+ 4) Check
+A little and very simple function to count te stl inside a folder.
+
+
+ 5) if main
+Inside the main you define a path for the checker and the list.
+For the multiprocessing we put in a list all the stl file. Using os.scandir and a for loop. 
+After we define the number of CPU we want for the multiprocessing. And we create the pool.
+
+
 Reach out to me if you find some troubles.
 
 
 
 
-References:
+# Analyzer
+This python script was made to analyze MSH files.
+
+The code uses meshio
+The input is a MSH file and the output are the number of nodes, edges and kind of mesh of the file.
+
+
+
+# References:
  C. Geuzaine and J.-F. Remacle. Gmsh: a three-dimensional finite element mesh generator with built-in pre- and post-processing facilities. International Journal for Numerical Methods in Engineering 79(11), pp. 1309-1331, 2009.
+ 
+ https://github.com/nschloe/meshio
