@@ -62,7 +62,7 @@ if __name__ == '__main__':
 # Analyzer
 This python script was made to analyze MSH files.
 
-The code uses meshio
+The code uses meshio.
 The input is a MSH file and the output are the number of nodes, edges and kind of mesh of the file.
 
 
